@@ -14,6 +14,11 @@ body {
 /* GLOBAL CLASS */
 .logo {
   filter: grayscale(100%) contrast(200%) brightness(200%);
+  transition: filter .3s ease-in-out;
+}
+
+.logo:hover {
+  filter: none;
 }
 
 .container {
@@ -95,8 +100,12 @@ a {
   color: #f2f2f2;
   text-align: center;
   padding: 2rem;
-  text-decoration: none;
   font-size: 2rem;
+  transition: color .3s;
+}
+
+.navbar .nav-link:hover {
+  color: #FFAB1C;
 }
 
 .hero {
@@ -190,17 +199,49 @@ a {
   gap: 12rem;
 }
 
-.product-img {
+.product-items .product-img {
+  display: flex;
   width: 420px;
   height: 500px;
-  object-fit: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  justify-content: center;
+  align-items: center;
+}
+
+.product-items .product-img .button {
+  margin: 0;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.product-items .product-img:hover .button {
+  opacity: 1;
+}
+
+.product-items .hot-coffee {
+  background-image: url('/public/image/hot-coffee.jpg');
+  transition: background-image 0.3s ease;
+}
+
+.product-items .hot-coffee:hover {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/public/image/hot-coffee.jpg');
+}
+
+.product-items .iced-coffee {
+  background-image: url('/public/image/iced-coffee.jpg');
+}
+
+.product-items .iced-coffee:hover {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/public/image/iced-coffee.jpg');
 }
 
 .footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 24rem;
+  padding: 1rem;
   background-color: rgb(32, 24, 19);
 }
 
@@ -216,10 +257,11 @@ a {
 
 .footer .footer-items a {
   color: #f2f2f2;
+  transition: color 0.3s;
 }
 
 .footer .footer-items a:hover {
-  text-decoration: underline;
+  color: #FFAB1C;
 }
 
 .footer .footer-items .socials {
@@ -228,4 +270,36 @@ a {
 
 .footer .footer-items .socials span {
   margin-left: 2rem;
+}
+
+@media only screen and (max-width: 960px) {
+  .about-items {
+    flex-direction: column;
+    max-width: 60rem;
+  }
+
+  .about-2 .about-items {
+    max-width: 80rem;
+  }
+
+  .products {
+    margin: 6.4rem 0;
+  }
+
+  .product-items {
+    flex-direction: column;
+    gap: 4rem
+  }
+
+  .product-items .product-img {
+    margin: auto;
+  }
+
+  .footer {
+    flex-direction: column;
+  }
+
+  .footer .left, .footer .right {
+    text-align: center;
+  }
 }
