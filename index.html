@@ -1,53 +1,305 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-  <title>Cafe Au Lait</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      http-equiv="X-UA-Compatible"
+      content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="style.css" />
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com" />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet" />
+    <script src="index.js"></script>
+    <script
+      src="https://kit.fontawesome.com/d2ec43dcd5.js"
+      crossorigin="anonymous"></script>
+    <title>Cafe Au Lait</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <header
+      id="navbar"
+      class="navbar">
+      <div class="container nav-items">
+        <!-- Logo -->
+        <a
+          href="#"
+          class="nav-logo">
+          <img
+            src="/public/image/logo.png"
+            alt="Cafe Au Lait Logo"
+            class="logo" />
+        </a>
 
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-2 fixed-top"> 
-    <div class="container">
-      <a href="#" class="navbar-brand">
-        <img src="/public/image/logo.png" width="72px" alt="Cafe Au Lait Logo">
-      </a>
-
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#navmenu"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse" id="navmenu">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item mx-4">
-            <a href="#" class="nav-link">HOME</a>
-          </li>
-          <li class="nav-item mx-4">
-            <a href="#about" class="nav-link">ABOUT</a>
-          </li>
-          <li class="nav-item mx-4">
-            <a href="#products" class="nav-link">PRODUCTS</a>
-          </li>
-        </ul>
+        <!-- Link -->
+        <nav>
+          <a
+            href="#"
+            class="nav-link"
+            >HOME</a
+          >
+          <a
+            href="#about"
+            class="nav-link"
+            >ABOUT</a
+          >
+          <a
+            href="#products"
+            class="nav-link"
+            >PRODUCTS</a
+          >
+        </nav>
       </div>
-    </div>
-  </nav>
+    </header>
 
-  <!-- Hero -->
-  <section id="hero">
-    <div class="container"></div>
-  </section>
+    <main>
+      <!-- Hero -->
+      <section class="hero">
+        <div class="container hero-items">
+          <img
+            src="/public/image/logo.png"
+            alt="Cafe Au Lait Logo"
+            class="logo" />
+          <p class="hero-caption">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum
+            distinctio corporis illo dolor. Neque obcaecati ullam assumenda
+            quaerat ad totam.
+          </p>
+          <a
+            href="#products"
+            class="button"
+            >SHOP HERE</a
+          >
+        </div>
+      </section>
 
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
-</body>
+      <!-- About -->
+      <section
+        id="about"
+        class="about-1">
+        <div class="container about-items">
+          <img
+            src="/public/image/product-bag.png"
+            alt="Cafe Au Lait Coffee Bag"
+            class="coffee-bag" />
+          <div>
+            <div class="about-1-info">
+              <span>
+                <svg
+                  width="48"
+                  height="48"
+                  viewBox="0 0 64 64"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M16 48C19.8352 47.4306 23.3379 45.5012 25.8689 42.5639C28.3998 39.6266 29.7903 35.8773 29.7867 32C29.806 27.1329 31.5716 22.4344 34.7624 18.7591C37.9532 15.0838 42.3572 12.6759 47.1733 11.9733L54.08 10.9867C53.8933 10.7733 53.7333 10.56 53.52 10.3467C44.8267 1.65333 28.1333 4.26666 16.1867 16.16C6.08 26.4 2.66667 40 7.36 49.2267L16 48Z"
+                    fill="black" />
+                  <path
+                    d="M33.9467 32C33.9292 36.8662 32.1683 41.565 28.9833 45.2441C25.7983 48.9233 21.4002 51.3391 16.5867 52.0533L10.0267 52.9867L10.4267 53.44C19.12 62.1333 35.8133 59.5467 47.76 47.6533C57.8133 37.6267 61.3333 24 56.6667 14.9067L47.76 16.1867C43.9492 16.7403 40.4621 18.6386 37.9288 21.5387C35.3955 24.4388 33.983 28.1494 33.9467 32Z"
+                    fill="black" />
+                </svg>
+              </span>
+              <div class="about-1-desc">
+                <h2>QUALITY BEANS</h2>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum
+                  deleniti adipisci minima perferendis provident molestiae
+                  explicabo ad vel eaque cumque, nisi id sequi aperiam beatae.
+                </p>
+              </div>
+            </div>
+            <div class="about-1-info">
+              <span>
+                <svg
+                  width="48"
+                  height="48"
+                  viewBox="0 0 64 64"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M23.4997 6.44503C24.3585 7.64148 24.0848 9.30759 22.8883 10.1664C22.396 10.5197 21.9971 10.9877 21.7261 11.5297C21.455 12.0717 21.3201 12.6716 21.3327 13.2775C21.3335 13.3147 21.3335 13.352 21.3327 13.3892C21.3201 13.9951 21.455 14.5949 21.7261 15.137C21.9971 15.679 22.396 16.1469 22.8883 16.5003C24.0848 17.3591 24.3585 19.0252 23.4997 20.2216C22.6409 21.4181 20.9748 21.6918 19.7784 20.833C18.5827 19.9748 17.614 18.8385 16.9558 17.5221C16.3059 16.2224 15.9781 14.7858 15.9996 13.3333C15.9781 11.8809 16.3059 10.4443 16.9558 9.14456C17.614 7.82818 18.5827 6.69182 19.7784 5.83362C20.9748 4.97484 22.6409 5.24857 23.4997 6.44503ZM34.1664 6.44503C35.0252 7.64148 34.7514 9.30759 33.555 10.1664C33.0626 10.5197 32.6638 10.9877 32.3927 11.5297C32.1217 12.0717 31.9867 12.6716 31.9994 13.2775C32.0002 13.3147 32.0002 13.352 31.9994 13.3892C31.9867 13.9951 32.1217 14.5949 32.3927 15.137C32.6638 15.679 33.0626 16.1469 33.555 16.5003C34.7514 17.3591 35.0252 19.0252 34.1664 20.2216C33.3076 21.4181 31.6415 21.6918 30.445 20.833C29.2494 19.9748 28.2806 18.8385 27.6225 17.5221C26.9726 16.2224 26.6448 14.7858 26.6663 13.3333C26.6448 11.8809 26.9726 10.4443 27.6225 9.14456C28.2806 7.82818 29.2494 6.69182 30.445 5.83362C31.6415 4.97484 33.3076 5.24857 34.1664 6.44503ZM35.9681 37.3331C32.6104 37.293 29.9202 38.188 28.2982 39.4426C25.5006 41.6066 21.5529 42.7115 17.3333 42.6668C13.1138 42.7115 9.16611 41.6066 6.36846 39.4426C5.20352 38.5416 4.98962 36.8667 5.89069 35.7018C6.79176 34.5368 8.4666 34.3229 9.63154 35.224C11.2535 36.4786 13.9437 37.3736 17.3015 37.3335H17.3652C20.723 37.3736 23.4131 36.4786 25.0351 35.224C27.8328 33.0601 31.7804 31.9552 36 31.9998C40.2196 31.9552 44.1672 33.0601 46.9649 35.224C48.1298 36.1251 48.3437 37.7999 47.4426 38.9649C46.5416 40.1298 44.8667 40.3437 43.7018 39.4426C42.0798 38.188 39.3896 37.293 36.0319 37.3331H35.9681Z"
+                    fill="black" />
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M5.33334 26.6667C5.33334 25.1939 6.52724 24 8 24H45.3333C46.8061 24 48 25.1939 48 26.6667V40C48 44.9507 46.0333 49.6987 42.5327 53.1993C39.032 56.7 34.284 58.6667 29.3333 58.6667H24C19.0493 58.6667 14.3014 56.7 10.8007 53.1993C7.3 49.6987 5.33334 44.9507 5.33334 40V26.6667ZM10.6667 29.3333V40C10.6667 43.5362 12.0714 46.9276 14.5719 49.4281C17.0724 51.9286 20.4638 53.3333 24 53.3333H29.3333C32.8696 53.3333 36.2609 51.9286 38.7614 49.4281C41.2619 46.9276 42.6667 43.5362 42.6667 40V29.3333H10.6667Z"
+                    fill="black" />
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M44.4395 27.2751C46.0868 26.6929 47.852 26.5243 49.5798 26.7841C51.3076 27.0439 52.9451 27.7242 54.3484 28.7651C55.7517 29.8061 56.8779 31.1758 57.6278 32.7539C58.3777 34.332 58.7285 36.0702 58.6494 37.8156C58.5702 39.561 58.0634 41.2603 57.1737 42.764C56.284 44.2677 55.0384 45.5298 53.5467 46.4394C52.0549 47.349 50.3625 47.8782 48.6182 47.9806C46.874 48.0829 45.1314 47.7551 43.5435 47.0262C42.205 46.4117 41.6181 44.8286 42.2325 43.4901C42.8469 42.1517 44.4301 41.5648 45.7686 42.1792C46.5625 42.5437 47.4338 42.7075 48.3059 42.6564C49.1781 42.6052 50.0243 42.3406 50.7702 41.8858C51.516 41.431 52.1388 40.7999 52.5837 40.0481C53.0285 39.2962 53.2819 38.4466 53.3215 37.5739C53.3611 36.7012 53.1857 35.8321 52.8107 35.043C52.4358 34.254 51.8727 33.5691 51.171 33.0487C50.4694 32.5282 49.6506 32.1881 48.7867 32.0582C47.9228 31.9282 47.0402 32.0125 46.2166 32.3036C44.828 32.7944 43.3045 32.0665 42.8137 30.6779C42.323 29.2893 43.0509 27.7658 44.4395 27.2751Z"
+                    fill="black" />
+                </svg>
+              </span>
+              <div class="about-1-desc">
+                <h2>THE PERFECT CUP</h2>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Tenetur accusantium consequuntur eum repellendus rerum
+                  recusandae ab eligendi, illum minima iste!
+                </p>
+              </div>
+            </div>
+            <div class="about-1-info">
+              <span>
+                <svg
+                  width="48"
+                  height="48"
+                  viewBox="0 0 64 64"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M18.6667 58.6667H45.3333C45.975 58.6668 46.5952 58.4355 47.0802 58.0152C47.5651 57.5949 47.8822 57.0139 47.9733 56.3787L52.9787 21.3334H56V16H52.3147L47.7173 6.80804C47.4965 6.36477 47.1564 5.9919 46.7352 5.73138C46.3141 5.47086 45.8286 5.33303 45.3333 5.33337H18.6667C17.656 5.33337 16.7333 5.90404 16.28 6.80804L11.6853 16H8V21.3334H11.0213L16.0267 56.3787C16.1178 57.0139 16.4349 57.5949 16.9198 58.0152C17.4048 58.4355 18.025 58.6668 18.6667 58.6667ZM46.448 29.3334H17.552L16.408 21.3334H47.5893L46.448 29.3334ZM20.9787 53.3334L19.8347 45.3334H44.1627L43.0187 53.3334H20.9787ZM20.3147 10.6667H43.6853L46.352 16H17.648L20.3147 10.6667Z"
+                    fill="black" />
+                </svg>
+              </span>
+              <div class="about-1-desc">
+                <h2>COFFEE TO GO</h2>
+                <p>
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Voluptatem blanditiis voluptate dolores error reiciendis
+                  tempore.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="about-2">
+        <div class="container about-items">
+          <div class="flex-left">
+            <h1>COFFEE ROAST</h1>
+            <hr />
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Exercitationem veritatis nam nihil sint dolorem repellendus quod
+              dolore vitae dolores quia.
+            </p>
+            <a
+              href="#products"
+              class="button"
+              >SEE PRODUCTS</a
+            >
+          </div>
+          <div class="flex-right"></div>
+        </div>
+      </section>
+
+      <!-- PRODUCTS -->
+      <section
+        id="products"
+        class="products">
+        <div class="container">
+          <h1>COFFEE PRODUCTS</h1>
+          <hr />
+          <div class="product-items">
+            <div id="hot_coffee">
+              <img
+                src="/public/image/hot-coffee.jpg"
+                alt="hot coffee"
+                class="product-img" />
+              <h2>HOT COFFEE</h2>
+            </div>
+            <div id="iced_coffee">
+              <img
+                src="/public/image/iced-coffee.jpg"
+                alt="iced coffee"
+                class="product-img" />
+              <h2>ICED COFFEE</h2>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer
+      id="footer"
+      class="footer">
+      <div class="footer-items">
+        <p>295 Duke Lane</p>
+        <p>Wayne, NJ</p>
+        <p>732-688-6024</p>
+        <p>908-896-0529</p>
+      </div>
+      <div class="footer-items right">
+        <p class="socials">
+          <span>
+            <a href="https://github.com/vitopapuan" target="_blank">
+              <i class="fa-brands fa-github"></i> Github
+            </a>
+          </span>
+          <span>
+            <a href="https://www.linkedin.com/in/vito-papuan/" target="_blank">
+              <i class="fa-brands fa-linkedin"></i> Linkedin
+            </a>
+          </span>
+          <span>
+            <a href="https://twitter.com/von_px" target="_blank">
+              <i class="fa-brands fa-twitter"></i> Twitter
+            </a>
+          </span>
+          <span>
+            <a href="https://www.instagram.com/von.px/" target="_blank">
+              <i class="fa-brands fa-instagram"></i> Instagram
+            </a>
+          </span>
+        </p>
+        <p>
+          Copyright &copy; 2023 | Mockup Website by
+          <a
+            href="https://github.com/vitopapuan"
+            target="_blank"
+            >Vito Papuan</a
+          >
+        </p>
+        <p>
+          Photos provided by
+          <a
+            href="https://unsplash.com/"
+            target="_blank"
+            >Unsplash</a
+          >,
+          <a
+            href="https://www.freepik.com/"
+            target="_blank"
+            >Freepik</a
+          >, and
+          <a
+            href="https://www.canva.com/"
+            target="_blank"
+            >Canva</a
+          >
+        </p>
+        <p>
+          Icon provided by
+          <a
+            href="https://fontawesome.com/"
+            target="_blank"
+            >FontAwesome</a
+          >
+          and
+          <a
+            href="https://iconify.design/"
+            target="_blank"
+            >Iconify</a
+          >
+        </p>
+      </div>
+    </footer>
+  </body>
 </html>
