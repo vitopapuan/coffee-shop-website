@@ -110,7 +110,7 @@ a {
 
 .hero {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url('/public/image/hero.jpg');
+    url('./public/image/hero.jpg');
   min-height: 100vh;
   background-position: center;
   background-repeat: no-repeat;
@@ -162,7 +162,7 @@ a {
       rgba(0, 0, 0, 1) 0%,
       rgba(0, 0, 0, 0) 100%
     ),
-    url('/public/image/coffee-roasting.jpg');
+    url('./public/image/coffee-roasting.jpg');
   display: flex;
   min-height: 100vh;
   background-position: center;
@@ -221,20 +221,20 @@ a {
 }
 
 .product-items .hot-coffee {
-  background-image: url('/public/image/hot-coffee.jpg');
+  background-image: url('./public/image/hot-coffee.jpg');
   transition: background-image 0.3s ease;
 }
 
 .product-items .hot-coffee:hover {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/public/image/hot-coffee.jpg');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./public/image/hot-coffee.jpg');
 }
 
 .product-items .iced-coffee {
-  background-image: url('/public/image/iced-coffee.jpg');
+  background-image: url('./public/image/iced-coffee.jpg');
 }
 
 .product-items .iced-coffee:hover {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/public/image/iced-coffee.jpg');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./public/image/iced-coffee.jpg');
 }
 
 .footer {
